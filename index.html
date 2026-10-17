@@ -1,117 +1,138 @@
-
 <!DOCTYPE html>
-<html lang="zh‑Hans">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF‑8" />
-  <meta name="viewport" content="width=device‑width, initial‑scale=1.0"/>
-  <title>Terms of Service | LumoConvert</title>
-  <style>
-    :root{
-      --bg-main:#0b0c14;
-      --bg-card:#141622;
-      --text-primary:#f0f2f8;
-      --text-secondary:#b8bcd0;
-      --accent:#4285ff;
-      --accent‑neon:#7b61ff;
-      --border:#272a3d;
-    }
-    *{box‑sizing:border‑box;margin:0;padding:0;}
-    body{
-      font‑family:‑apple‑system,BlinkMacSystemFont,"PingFang SC","Segoe UI",Roboto,Helvetica,Arial,sans‑serif;
-      background‑color:var(--bg‑main);
-      color:var(--text‑primary);
-      line‑height:1.8;
-      padding:24px 16px;
-      max‑width:860px;
-      margin:0 auto;
-    }
-    .lang‑wrap{
-      display:flex;
-      justify‑content:flex‑end;
-      margin‑bottom:28px;
-    }
-    .lang‑select{
-      background:var(--bg‑card);
-      border:1px solid var(--border);
-      color:var(--text‑primary);
-      padding:6px 10px;
-      border‑radius:6px;
-      font‑size:14px;
-      min‑width:160px;
-    }
-    .container{
-      background:var(--bg‑card);
-      border‑radius:14px;
-      padding:28px 32px;
-      border:1px solid var(--border);
-    }
-    h1{
-      font‑size:26px;
-      margin‑bottom:12px;
-      background:linear‑gradient(90deg,var(--accent),var(--accent‑neon));
-      ‑webkit‑background‑clip:text;
-      color:transparent;
-    }
-    .effective‑date{
-      color:var(--text‑secondary);
-      font‑size:14px;
-      margin‑bottom:24px;
-      padding‑bottom:14px;
-      border‑bottom:1px solid var(--border);
-    }
-    h2{
-      font‑size:18px;
-      margin:28px 0 10px;
-      color:#e2e6f5;
-    }
-    p{
-      color:var(--text‑secondary);
-      margin:10px 0;
-      text‑align:justify;
-    }
-    ul,ol{
-      padding‑left:22px;
-      margin:10px 0;
-      color:var(--text‑secondary);
-    }
-    li{
-      margin:6px 0;
-    }
-    strong{
-      color:#fff;
-    }
-    a{
-      color:var(--accent);
-      text‑decoration:none;
-    }
-    a:hover{text‑decoration:underline;}
-    footer{
-      margin‑top:36px;
-      padding‑top:16px;
-      border‑top:1px solid var(--border);
-      color:var(--text‑secondary);
-      font‑size:13px;
-      text‑align:center;
-    }
-    @media(max‑width:600px){
-      .container{padding:20px 16px;}
-      h1{font‑size:22px;}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service · LumoConvert</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='6' fill='%238b7cf6'/><polygon points='13 5 7 14 12 14 11 19 17 10 12 10 13 5' fill='white'/></svg>">
+<style>
+  :root {
+    --bg: #0c0c12;
+    --surface: #14141c;
+    --surface-2: #1c1c28;
+    --border: #262636;
+    --text: #ececf2;
+    --muted: #9a9ab0;
+    --accent: #8b7cf6;
+    --accent-2: #5ec8e8;
+    --accent-grad: linear-gradient(135deg, #8b7cf6 0%, #5ec8e8 100%);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", "Helvetica Neue", sans-serif;
+    line-height: 1.7;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent-2); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  .lang-wrap {
+    display: flex; justify-content: flex-end;
+    padding: 20px 0 0;
+  }
+  .lang-select {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 11px;
+    border-radius: 7px;
+    font-size: 12.5px;
+    font-family: inherit;
+    min-width: 160px;
+  }
+  .hero {
+    padding: 48px 0 40px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  .hero h1 {
+    font-size: 28px; font-weight: 700; letter-spacing: -0.5px;
+    margin-bottom: 10px;
+    background: var(--accent-grad);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .hero .date-note {
+    color: var(--muted);
+    font-size:14px;
+  }
+  section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+  section:last-of-type { border-bottom: none; }
+  h2 {
+    font-size: 19px; font-weight: 700; margin:28px 0 10px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  h2::before {
+    content: ""; width: 4px; height: 18px; border-radius: 2px;
+    background: var(--accent-grad);
+  }
+  p {
+    color: var(--muted);
+    margin:10px 0;
+    text-align: justify;
+  }
+  ul,ol {
+    padding-left:22px;
+    margin:10px 0;
+    color:var(--muted);
+  }
+  li {
+    margin:6px 0;
+  }
+  strong { color:var(--text); font-weight:600; }
+  footer {
+    padding: 32px 0 48px;
+    text-align: center;
+    color: var(--muted); font-size: 12.5px;
+  }
+  footer .links { margin-bottom: 10px; }
+  footer .links a { margin: 0 10px; }
+  @media (max-width: 600px) {
+    .hero { padding: 32px 0 28px; }
+    .hero h1 { font-size: 22px; }
+    h2 { font-size: 17px; }
+  }
+</style>
 </head>
 <body>
-  <div class="lang‑wrap">
-    <select class="lang‑select" id="langSelect"></select>
+<div class="wrap">
+  <div class="lang-wrap">
+    <select class="lang-select" id="langSelect"></select>
   </div>
-  <div class="container" id="pageContent"></div>
-  <footer>LumoConvert © 2026</footer>
+  <div class="hero">
+    <h1 data-i18n="title"></h1>
+    <div class="date-note" data-i18n="effectiveDate"></div>
+  </div>
+  <div id="contentBody"></div>
+  <footer>
+    <div class="links">
+      <a href="https://shamoshuisheng.github.io/privacy" target="_blank" data-i18n="linkPrivacy"></a>
+      <a href="https://shamoshuisheng.github.io/userTerms" target="_blank" data-i18n="linkTerms"></a>
+      <a href="https://shamoshuisheng.github.io/subscription" target="_blank" data-i18n="linkSubscription"></a>
+    </div>
+    <div>© 2026 LumoConvert. All rights reserved.</div>
+  </footer>
+</div>
 
 <script>
-const i18n = {
-"zh‑Hans":{
+var EMAIL = "shamoshuisheng@163.com";
+var URL_PRIVACY = "https://shamoshuisheng.github.io/privacy";
+var URL_TERMS = "https://shamoshuisheng.github.io/userTerms";
+var URL_SUBSCRIPTION = "https://shamoshuisheng.github.io/subscription";
+
+var I18N = {};
+I18N["zh-CN"] = {
+  langName:"简体中文",
   title:"用户使用条款",
-  effective:"生效日期：2026年09月23日",
-  content:`
+  effectiveDate:"生效日期：2026年09月23日",
+  linkPrivacy:"隐私政策",
+  linkTerms:"用户使用条款",
+  linkSubscription:"订阅服务协议",
+  html:`
 <p>本《用户使用条款》（以下简称“本条款”）是您（个人或单位用户，以下简称“用户”）与本工具软件运营方（以下简称“我方”），就本工具类软件（以下简称“本软件”）的使用所订立的合法有效协议。</p>
 <p>本软件为纯本地单体工具应用，无服务器强制联网、无用户内容发布、无社区社交、无UGC内容。您下载、安装、运行、使用本软件，即表示您已阅读、理解并完全同意本条款全部内容。如您不同意本条款，请立即卸载并停止使用本软件。</p>
 <h2>一、软件性质与使用许可</h2>
@@ -123,7 +144,7 @@ const i18n = {
 </ol>
 <h2>二、本地数据与存储规则</h2>
 <ol>
-<li>本软件所有用户配置、本地记录、生成文件、缓存数据均仅存储于用户本地设备，我方不会主动收集、上传、备份用户本地工具数据。</li>
+<li>本软件所有用户配置、本地记录、生成文件、缓存数据均仅存储于用户本地设备，我方不会主动收集、上传、备份用户本地工具数据。详情请查阅<a href="${URL_PRIVACY}" target="_blank">隐私政策</a>。</li>
 <li>因用户卸载软件、更换设备、系统重装、设备故障、手动清理数据导致的配置丢失、文件丢失、记录清空，我方无备份、无法恢复，不承担任何责任。</li>
 <li>若软件附带手动云备份/导出功能，该功能仅为用户自助工具，我方不保证数据永久保存与绝对完整，用户需自行做好本地文件备份。</li>
 <li>用户不得通过修改本地数据库、配置文件、缓存数据的方式篡改软件授权、使用时长、功能权限，一经发现我方有权终止使用许可。</li>
@@ -145,7 +166,7 @@ const i18n = {
 </ol>
 <h2>五、付费与会员权益</h2>
 <ol>
-<li>本软件免费功能供用户自由自用，部分高级功能、解锁权限为一次性付费或周期订阅的本地虚拟权益。</li>
+<li>本软件免费功能供用户自由自用，部分高级功能、解锁权限为一次性付费或周期订阅的本地虚拟权益，详细见<a href="${URL_SUBSCRIPTION}" target="_blank">订阅服务协议</a>。</li>
 <li>工具类虚拟功能权益一经解锁、生效，属于已提供的数字服务，不支持无理由退款。</li>
 <li>因用户篡改软件、违规使用、设备更换、自行损坏授权文件导致的功能失效，不予补偿或退款。</li>
 </ol>
@@ -164,12 +185,18 @@ const i18n = {
 <p>本条款适用中华人民共和国法律。双方发生争议优先协商解决，协商不成的，可向我方运营主体所在地人民法院提起诉讼。</p>
 <h2>十、附则</h2>
 <p>本条款为本软件完整使用规则，如部分条款被认定无效，不影响其余条款的效力。</p>
+<h2>十一、联系我们</h2>
+<p>如有疑问，请联系邮箱：<a href="mailto:${EMAIL}">${EMAIL}</a>。</p>
 `
-},
-"zh‑Hant":{
+};
+I18N["zh-TW"] = {
+  langName:"繁體中文",
   title:"使用者使用條款",
-  effective:"生效日期：2026年09月23日",
-  content:`
+  effectiveDate:"生效日期：2026年09月23日",
+  linkPrivacy:"隱私權政策",
+  linkTerms:"使用者使用條款",
+  linkSubscription:"訂閱服務協議",
+  html:`
 <p>本《使用者使用條款》（簡稱本條款）為您（個人或單位使用者）與軟體營運方（我方）就本工具軟體之使用所訂立的合法協議。</p>
 <p>本軟體為純本機獨立工具，無強制聯網伺服器、無使用者內容發布、無社群社交、無UGC內容。下載、安裝、執行即代表您已閱讀並完全同意本條款。若不同意請立即解除安裝並停止使用。</p>
 <h2>一、軟體性質與使用授權</h2>
@@ -181,7 +208,7 @@ const i18n = {
 </ol>
 <h2>二、本機資料儲存規則</h2>
 <ol>
-<li>設定、操作紀錄、產生檔案、快取全部儲存於使用者裝置；我方不會主動收集、上傳或備份使用者資料。</li>
+<li>設定、操作紀錄、產生檔案、快取全部儲存於使用者裝置；我方不會主動收集、上傳或備份使用者資料，詳見<a href="${URL_PRIVACY}" target="_blank">隱私權政策</a>。</li>
 <li>解除安裝、更換裝置、系統重裝、裝置故障、手動清除資料造成檔案遺失，我方沒有備份，無法復原，不承擔責任。</li>
 <li>若內建手動雲備份/匯出，僅為使用者自助工具，我方不保證永久儲存，使用者應自行備份本機檔案。</li>
 <li>禁止修改本機資料庫、設定檔、快取來竄改授權、使用時長與功能權限，違反者我方得終止使用授權。</li>
@@ -203,7 +230,7 @@ const i18n = {
 </ol>
 <h2>五、付費與會員權益</h2>
 <ol>
-<li>基礎功能免費使用；部分進階功能為一次性付費或週期訂閱之本機虛擬權益。</li>
+<li>基礎功能免費使用；部分進階功能為一次性付費或週期訂閱之本機虛擬權益，詳細請參考<a href="${URL_SUBSCRIPTION}" target="_blank">訂閱服務協議</a>。</li>
 <li>虛擬功能權益一旦解鎖生效即視為服務已提供，不支援無理由退款。</li>
 <li>因竄改軟體、違規使用、更換裝置、損毀授權檔案造成功能失效，不予補償或退款。</li>
 </ol>
@@ -222,12 +249,18 @@ const i18n = {
 <p>本條款適用中華人民共和國法律。爭議優先協商，協商不成得向我方營運主體所在地法院提起訴訟。</p>
 <h2>十、附則</h2>
 <p>若本條款部分條文被認定無效，不影響剩餘條文效力。</p>
+<h2>十一、聯絡我們</h2>
+<p>如有疑問，請寄信至：<a href="mailto:${EMAIL}">${EMAIL}</a>。</p>
 `
-},
-"en‑US":{
+};
+I18N["en"] = {
+  langName:"English",
   title:"Terms of Use",
-  effective:"Effective Date: September 23, 2026",
-  content:`
+  effectiveDate:"Effective Date: September 23, 2026",
+  linkPrivacy:"Privacy Policy",
+  linkTerms:"Terms of Service",
+  linkSubscription:"Subscription Agreement",
+  html:`
 <p>These Terms of Use (“Terms”) constitute a binding legal agreement between you (individual or organizational user) and the operator of this utility software (“us”).</p>
 <p>This is a local‑first standalone utility app. No mandatory server‑side networking, no user content publishing, no social community, no UGC content. By downloading, installing, launching or using the Software you confirm you have read and fully accept these Terms. If you do not agree, uninstall and stop using immediately.</p>
 <h2>1. Software Nature & License</h2>
@@ -239,7 +272,7 @@ const i18n = {
 </ol>
 <h2>2. Local‑Only Data Storage</h2>
 <ol>
-<li>All settings, operation logs, generated files and caches remain stored locally on your device. We do not actively collect, upload or back‑up your local data.</li>
+<li>All settings, operation logs, generated files and caches remain stored locally on your device. We do not actively collect, upload or back‑up your local data. Please read our <a href="${URL_PRIVACY}" target="_blank">Privacy Policy</a>.</li>
 <li>Data loss caused by uninstall, device replacement, OS reinstall, hardware failure or manual cache clearing is your responsibility. We hold no backups and cannot restore lost data.</li>
 <li>If manual cloud‑backup / export functions are provided, they are self‑service tools only. We do not guarantee permanent or complete data preservation. You are responsible for your own local backups.</li>
 <li>Do not modify local databases, config files or cache to tamper with licenses, usage limits or feature permissions. Violation may result in immediate license termination.</li>
@@ -261,7 +294,7 @@ const i18n = {
 </ol>
 <h2>5. Paid‑Features & Membership</h2>
 <ol>
-<li>Basic functions are free for personal use. Certain premium features are unlocked via one‑time purchase or auto‑renew subscription as local‑only virtual entitlements.</li>
+<li>Basic functions are free for personal use. Certain premium features are unlocked via one‑time purchase or auto‑renew subscription as local‑only virtual entitlements. See <a href="${URL_SUBSCRIPTION}" target="_blank">Subscription Agreement</a>.</li>
 <li>Once premium virtual entitlements are activated the service is deemed delivered. No unconditional refunds apply.</li>
 <li>No compensation or refund for feature failure caused by tampering, misuse, device change or corrupted local license files.</li>
 </ol>
@@ -273,19 +306,25 @@ const i18n = {
 <li>We are not liable for breach of contract if some features get disabled due to force‑majeure or regulatory policy adjustments.</li>
 </ol>
 <h2>7. Minors</h2>
-<p>This is a general‑purpose utility without harmful content. Minors must use it under guardian consent and supervision. Guardians are responsible for minor’s usage and any‑in‑app purchases.</p>
+<p>This is a general‑purpose utility without harmful content. Minors must use it under guardian consent and supervision. Guardians are responsible for minor’s usage and any in‑app purchases.</p>
 <h2>8. Term Revisions</h2>
 <p>We may revise these Terms to comply with law or business needs. Revised terms take effect upon publication. Continued software use constitutes acceptance of updated text.</p>
 <h2>9. Governing Law & Disputes</h2>
 <p>These Terms are governed by laws of People’s Republic of China. Disputes shall first be resolved by negotiation. If negotiation fails, litigation may be filed at the people’s court where our operator entity is located.</p>
 <h2>10. Miscellaneous</h2>
 <p>If any clause of these Terms is held invalid, remaining clauses shall remain fully enforceable.</p>
+<h2>11. Contact Us</h2>
+<p>For inquiries please email: <a href="mailto:${EMAIL}">${EMAIL}</a>.</p>
 `
-},
-"ja":{
+};
+I18N["ja"] = {
+  langName:"日本語",
   title:"利用規約",
-  effective:"発効日：2026年09月23日",
-  content:`
+  effectiveDate:"発効日：2026年09月23日",
+  linkPrivacy:"プライバシーポリシー",
+  linkTerms:"利用規約",
+  linkSubscription:"サブスクリプション利用規約",
+  html:`
 <p>本利用規約は、ユーザー（個人または組織）と本ツールソフトウェア運営者の間で締結される法的な契約です。</p>
 <p>本アプリはローカル実行型のスタンドアロンユーティリティで、強制的なサーバー通信、ユーザーコンテンツ投稿、ソーシャル機能、UGCコンテンツはありません。ダウンロード・インストール・実行することで本規約に同意したものとみなされます。同意できない場合は直ちにアンインストールして利用を停止してください。</p>
 <h2>1.ソフトウェアの性質とライセンス</h2>
@@ -297,5 +336,294 @@ const i18n = {
 </ol>
 <h2>2.ローカルデータ保存ルール</h2>
 <ol>
-<li>設定、操作ログ、生成ファイル、キャッシュはすべてユーザー端末に保存されます。当社は能動的にデータを収集・アップロード・バックアップしません。</li>
-<li>アンインスト
+<li>設定、操作ログ、生成ファイル、キャッシュはすべてユーザー端末に保存されます。当社は能動的にデータを収集・アップロード・バックアップしません。詳細は<a href="${URL_PRIVACY}" target="_blank">プライバシーポリシー</a>をご確認ください。</li>
+<li>アンインストール、機種変更、OS再インストール、端末故障、手動キャッシュ削除によるデータ消失について当社は責任を負いません。データ復旧はできません。</li>
+<li>手動クラウドバックアップ機能は利用者向け補助ツールであり、データの完全な永続保存を保証しません。利用者自身でローカルバックアップを行ってください。</li>
+<li>ローカルDBや設定ファイル、キャッシュを改変しライセンスや利用制限を不正操作する行為は禁止。違反時は利用ライセンスを失効させます。</li>
+</ol>
+<h2>3.ユーザーの利用ルール</h2>
+<ol>
+<li>法令、ネットワークセキュリティ、公序良俗に従って利用してください。</li>
+<li>違法、権利侵害、わいせつ、有害なコンテンツの処理・生成・配布を禁止します。</li>
+<li>ツールを悪用した大量処理、権利侵害業務、違法な営利行為を禁止します。</li>
+<li>ライセンス機構を回避・改変しソフトの動作ロジックを改ざんしてはいけません。</li>
+<li>ソースの抽出、複製、二次開発、偽版の配布を禁止します。</li>
+</ol>
+<p>不正利用によるすべての結果は利用者が負担します。当社は利用停止措置および法的手続きを行う権利を留保します。</p>
+<h2>4.ソフトウェアのアップデートと保守</h2>
+<ol>
+<li>機能改善・セキュリティ修正・法令対応のためアップデートをリリースする場合があり、インストールは任意です。</li>
+<li>永続的なアップデート・保守を保証するものではなく、運営上の理由で開発を終了することがあります。インストール済みバージョンは引き続き使用可能です。</li>
+<li>アップデートは不具合修正、機能最適化、OS対応のためのもので、ユーザーのプライバシーデータを強制収集しません。</li>
+</ol>
+<h2>5.有料機能と会員権利</h2>
+<ol>
+<li>基本機能は無料。一部プレミアム機能は一括購入またはサブスクリプションによるローカル仮想権限です。詳細は<a href="${URL_SUBSCRIPTION}" target="_blank">サブスクリプション利用規約</a>を参照。</li>
+<li>仮想権限が有効化された時点でサービス提供完了となり、無条件返金には対応しません。</li>
+<li>ソフト改変、不正利用、機種変更、ライセンスファイル破損による機能不具合に対し、補償・返金は行いません。</li>
+</ol>
+<h2>6.免責事項</h2>
+<ol>
+<li>ソフトウェアは現状のまま提供されます。安定性に努めますが、全デバイス・OSで完全に不具合ゼロを保証するものではありません。</li>
+<li>生成・出力されたファイルの検証・保管は利用者自身の責任です。出力結果の正確性・完全性を保証しません。</li>
+<li>操作ミス、端末環境異常、互換性問題、バックアップ未実施による損失は利用者負担です。</li>
+<li>不可抗力、法令改正により一部機能が停止した場合、当社は契約違反責任を負いません。</li>
+</ol>
+<h2>7.未成年者の利用</h2>
+<p>本アプリは汎用ツールで有害コンテンツは含まれません。未成年者は保護者の同意・監督のもと利用してください。保護者は利用行為・課金行為に対する監督責任を負います。</p>
+<h2>8.規約の改定</h2>
+<p>法令および運営上の必要により本規約を改定することがあります。公開時点で効力発生、継続利用は改定版に同意したものとみなされます。</p>
+<h2>9.準拠法・紛争解決</h2>
+<p>本規約は中華人民共和国の法律に準拠します。紛争はまず協議により解決し、協議が整わない場合は運営主体所在地の人民法院に提訴できます。</p>
+<h2>10.補足</h2>
+<p>一部条項が無効と判断された場合でも、残りの条項は有効に存続します。</p>
+<h2>11.お問い合わせ</h2>
+<p>ご質問があればメール：<a href="mailto:${EMAIL}">${EMAIL}</a> まで。</p>
+`
+};
+I18N["ko"] = {
+  langName:"한국어",
+  title:"서비스 약관",
+  effectiveDate:"시행일: 2026년 09월 23일",
+  linkPrivacy:"개인정보 처리방침",
+  linkTerms:"서비스 약관",
+  linkSubscription:"구독 서비스 약관",
+  html:`
+<p>본 서비스 약관은 사용자(개인 또는 단체)와 본 툴 소프트웨어 운영자 간의 법적 계약입니다.</p>
+<p>본 앱은 로컬 기반 독립 유틸리티로 강제 서버 통신, 사용자 콘텐츠 발행, 소셜 기능, UGC 콘텐츠가 없습니다. 다운로드·설치·실행하면 본 약관에 동의하는 것으로 간주합니다. 동의하지 않으면 즉시 제거하고 사용을 중단하십시오.</p>
+<h2>1. 소프트웨어 성질과 사용 라이선스</h2>
+<ol>
+<li>핵심 기능은 기기 내에서 실행하며 대부분 오프라인 사용 가능합니다. 업데이트, 라이선스 검증만 선택적으로 네트워크를 사용합니다.</li>
+<li>당사는 제한적·비독점·양도 불가·비상업 개인 사용 라이선스를 부여합니다. 본인 기기에서 개인 학습, 일상 용도로만 사용 가능합니다.</li>
+<li>리버스 엔지니어링, 디컴파일, 크랙, 코드·알고리즘·UI 변조를 금지합니다. 변형판 제작, 임대, 판매, 재배포, 상업 라이선스 부여 금지.</li>
+<li>저작권, 상표권, 알고리즘, 소스코드, 디자인 등 모든 지적재산권은 당사에 귀속하며 본 약관으로 소유권이 이전되지 않습니다.</li>
+</ol>
+<h2>2. 로컬 데이터 저장 규칙</h2>
+<ol>
+<li>설정, 작업 기록, 생성 파일, 캐시는 모두 사용자 기기에 저장됩니다. 당사는 능동적으로 데이터를 수집·업로드·백업하지 않습니다. 자세한 내용은 <a href="${URL_PRIVACY}" target="_blank">개인정보 처리방침</a>을 참고하십시오.</li>
+<li>앱 삭제, 기기 교체, 시스템 재설치, 기기 고장, 수동 캐시 삭제로 인한 데이터 손실은 사용자 책임이며 당사는 복구할 수 없습니다.</li>
+<li>수동 클라우드 백업 기능은 사용자 편의 도구일 뿐 데이터 영구 보장하지 않습니다. 사용자가 직접 로컬 백업을 수행해야 합니다.</li>
+<li>로컬 DB, 설정파일, 캐시를 수정하여 라이선스·사용제한을 변조하는 행위 금지. 위반 시 사용 라이선스가 취소됩니다.</li>
+</ol>
+<h2>3. 사용자 준수 사항</h2>
+<ol>
+<li>법률, 네트워크 보안, 공공질서에 따라 사용하십시오.</li>
+<li>불법·권리침해·음란·유해 콘텐츠 처리·생성·배포 금지.</li>
+<li>툴 악용으로 대량처리, 권리침해 업무, 불법 영리 행위 금지.</li>
+<li>라이선스 메커니즘을 우회·변조하여 소프트웨어 동작 논리를 바꾸지 마십시오.</li>
+<li>소스 추출, 복제, 재개발, 위조 버전 배포 금지.</li>
+</ol>
+<p>불법 사용으로 발생하는 모든 책임은 사용자가 부담합니다. 당사는 사용 정지 및 법적 조치 권리를 보유합니다.</p>
+<h2>4. 소프트웨어 업데이트 및 유지보수</h2>
+<ol>
+<li>기능개선·보안수정·법규대응 위하여 업데이트 배포할 수 있으며 설치는 선택 사항입니다.</li>
+<li>영구 업데이트·유지보수를 보증하지 않으며 운영상 이유로 개발을 종료할 수 있습니다. 기존 설치 버전은 계속 사용 가능합니다.</li>
+<li>업데이트는 버그수정, 기능최적화, OS호환 목적이며 개인정보를 강제 수집하지 않습니다.</li>
+</ol>
+<h2>5. 유료기능 및 멤버 권한</h2>
+<ol>
+<li>기본 기능은 무료입니다. 일부 프리미엄 기능은 일회 구매 혹은 구독 기반 로컬 가상 권한입니다. 자세한 내용은 <a href="${URL_SUBSCRIPTION}" target="_blank">구독 서비스 약관</a>을 확인하십시오.</li>
+<li>가상 권한 활성화 후 서비스 제공 완료로 간주되므로 무조건 환불은 지원하지 않습니다.</li>
+<li>소프트웨어 변조, 불법 사용, 기기 교체, 라이선스 파일 손상으로 인한 기능 이상에 대해 보상·환불하지 않습니다.</li>
+</ol>
+<h2>6. 면책 조항</h2>
+<ol>
+<li>소프트웨어는 “있는 그대로” 제공됩니다. 안정성을 노력하지만 모든 기기·OS에서 완벽 오류 없음을 보증하지 않습니다.</li>
+<li>생성·내보내기 파일 검증과 보관은 사용자 책임입니다. 출력 결과의 정확성·완전성을 보증하지 않습니다.</li>
+<li>조작 실수, 기기 환경 이상, 호환 문제, 백업 미실시로 인한 손실은 사용자 부담입니다.</li>
+<li>불가항력, 법규 개정으로 일부 기능 중단 시 당사는 계약 위반 책임을 지지 않습니다.</li>
+</ol>
+<h2>7. 미성년자 이용</h2>
+<p>본 앱은 범용 유틸리티로 유해 콘텐츠가 없습니다. 미성년자는 보호자의 동의와 감독 하에 사용해야 합니다. 보호자는 사용·결제 행위에 대한 감독 책임을 집니다.</p>
+<h2>8. 약관 개정</h2>
+<p>법률·운영 필요에 따라 약관을 개정할 수 있으며 공개 즉시 효력 발생. 계속 사용은 개정 약관에 동의하는 것으로 간주합니다.</p>
+<h2>9. 준거법 및 분쟁 처리</h2>
+<p>본 약관은 중화인민공화국 법률을 따릅니다. 분쟁은 우선 협의하고 협의 불가 시 운영 주체 소재지 법원에 소송 제기 가능합니다.</p>
+<h2>10. 부칙</h2>
+<p>일부 조항이 무효 판단되어도 나머지 조항은 유효합니다.</p>
+<h2>11. 문의하기</h2>
+<p>문의 사항은 이메일：<a href="mailto:${EMAIL}">${EMAIL}</a> 로 보내주십시오.</p>
+`
+};
+I18N["de-DE"] = {
+  langName:"Deutsch",
+  title:"Nutzungsbedingungen",
+  effectiveDate:"Gültig ab: 23. September 2026",
+  linkPrivacy:"Datenschutz",
+  linkTerms:"Nutzungsbedingungen",
+  linkSubscription:"Abonnement‑Vereinbarung",
+  html:`
+<p>Diese Nutzungsbedingungen stellen einen rechtskräftigen Vertrag zwischen Ihnen (Einzel‑ oder Unternehmennutzer) und dem Betreiber dieser Utility‑Software dar.</p>
+<p>Dies ist eine lokal ausgeführte Anwendung ohne verpflichtende Server‑Netzwerkverbindung, ohne Nutzer‑Inhaltsveröffentlichung, ohne soziale Community und ohne UGC‑Inhalte. Mit Herunterladen, Installation und Nutzung der Software bestätigen Sie diese Bedingungen gelesen und akzeptiert zu haben. Bei Ablehnung deinstallieren Sie die Anwendung umgehend.</p>
+<h2>1. Software‑Eigenschaft und Lizenz</h2>
+<ol>
+<li>Kernfunktionen laufen auf Ihrem Gerät und sind offline nutzbar. Nur Aktualisierungen und Lizenzprüfung können optional das Netzwerk nutzen.</li>
+<li>Sie erhalten eine begrenzte, nicht‑exklusive, nicht übertragbare, nicht‑kommerzielle persönliche Lizenz zur Nutzung auf Ihren eigenen Geräten für Lern‑ und private Zwecke.</li>
+<li>Reverse‑Engineering, Dekompilieren, Knacken, Manipulation von Code, Algorithmen oder Oberfläche sind verboten. Modifikationen, Vermietung, Verkauf, Weiterverpackung oder kommerzielle Lizenzierung ist unzulässig.</li>
+<li>Sämtliche geistigen Eigentumsrechte, Urheberrechte, Marken, Algorithmen und Quellcode liegen bei uns. Diese Bedingungen übertragen keine Eigentumsrechte.</li>
+</ol>
+<h2>2. Lokale Datenspeicherung</h2>
+<ol>
+<li>Einstellungen, Protokolle, generierte Dateien und Cache werden ausschließlich auf Ihrem Gerät gespeichert. Wir sammeln oder laden keine Nutzerdaten hoch. Lesen Sie unsere <a href="${URL_PRIVACY}" target="_blank">Datenschutzerklärung</a>.</li>
+<li>Datenverlust durch Deinstallation, Gerätewechsel, Neuinstallation, Hardware‑Defekt oder manuelles Löschen des Caches liegt in Ihrer Verantwortung. Wir besitzen keine Sicherungskopien und können keine Daten wiederherstellen.</li>
+<li>Manuelle Backup‑Funktionen sind reine Selbstbedienungswerkzeuge. Wir gewährleisten keine dauerhafte vollständige Datenspeicherung. Sichern Sie Ihre Dateien lokal.</li>
+<li>Das Manipulieren von lokalen Datenbanken, Konfigurationsdateien oder Cache zur Umgehung von Lizenzen ist verboten und kann zum Lizenzentzug führen.</li>
+</ol>
+<h2>3. Zulässige Nutzung</h2>
+<ol>
+<li>Nutzen Sie die Software im Einklang mit Gesetzen, Cybersicherheits‑Regeln und öffentlicher Moral.</li>
+<li>Verarbeiten, erstellen oder verbreiten Sie keine rechtswidrigen, verletzenden, obszönen oder schädlichen Inhalte.</li>
+<li>Missbrauchen Sie das Tool nicht für Massenverarbeitung, rechtsverletzende Arbeiten oder unrechtmäßige kommerzielle Gewinnerzielung.</li>
+<li>Umgehen oder verändern Sie keine Berechtigungs‑ und Lizenzmechanismen.</li>
+<li>Extrahiere, klone oder verbreite keine modifizierten Kopien unter unserem Namen.</li>
+</ol>
+<p>Für alle Folgen missbräuchlicher Nutzung tragen Sie die alleinige Verantwortung. Wir behalten uns Zugriffssperren und rechtliche Schritte vor.</p>
+<h2>4. Aktualisierungen und Wartung</h2>
+<ol>
+<li>Wir können Aktualisierungen für Fehlerkorrekturen, Sicherheits‑ und Compliance‑Zwecke veröffentlichen. Die Installation ist freiwillig.</li>
+<li>Es besteht keine Verpflichtung zu dauerhaften Updates. Wir können die Weiterentwicklung einstellen. Bereits installierte Versionen bleiben nutzbar.</li>
+<li>Aktualisierungen dienen Fehlerbehebung und Kompatibilität, sie sammeln keine privaten Nutzerdaten.</li>
+</ol>
+<h2>5. Bezahlfunktionen und Mitgliedschaft</h2>
+<ol>
+<li>Grundfunktionen sind kostenlos. Premium‑Funktionen werden per Einmal‑Kauf oder Abonnement als lokale virtuelle Rechte freigeschaltet. Einzelheiten siehe <a href="${URL_SUBSCRIPTION}" target="_blank">Abonnement‑Vereinbarung</a>.</li>
+<li>Nach Aktivierung gilt die Leistung als erbracht, bedingungslose Rückerstattungen erfolgen nicht.</li>
+<li>Keine Entschädigung oder Rückerstattung bei Funktionsausfall durch Manipulation, Missbrauch, Gerätewechsel oder beschädigte Lizenzdateien.</li>
+</ol>
+<h2>6. Haftungsausschluss</h2>
+<ol>
+<li>Die Software wird „wie sie ist“ bereitgestellt. Wir streben Stabilität an, garantieren aber keine fehlerfreie Funktion auf allen Geräten und Betriebssystemen.</li>
+<li>Sie sind verantwortlich für Prüfung und Sicherung aller erzeugten oder verarbeiteten Dateien. Wir übernehmen keine Garantie für Korrektheit und Vollständigkeit der Ausgabedaten.</li>
+<li>Verluste durch Bedienfehler, Geräte‑Umgebungs‑Probleme, Inkompatibilität oder fehlende Sicherungen gehen zu Ihren Lasten.</li>
+<li>Bei Funktions‑Einschränkungen durch höhere Gewalt oder regulatorische Änderungen übernehmen wir keine Vertragshaftung.</li>
+</ol>
+<h2>7. Minderjährige</h2>
+<p>Dies ist ein allgemeines Werkzeug ohne schädliche Inhalte. Minderjährige nutzen es nur mit Zustimmung und Aufsicht eines Erziehungsberechtigten. Der Erziehungsberechtigte haftet für Nutzung und In‑App‑Käufe.</p>
+<h2>8. Änderungen der Bedingungen</h2>
+<p>Wir können diese Nutzungsbedingungen an Gesetze und betriebliche Erfordernisse anpassen. Die neue Fassung tritt mit Veröffentlichung in Kraft. Fortgesetzte Nutzung bedeutet Akzeptanz.</p>
+<h2>9. Anwendbares Recht und Streitbeilegung</h2>
+<p>Es gilt das Recht der Volksrepublik China. Streitigkeiten werden zuerst verhandelt. Scheitert die Verhandlung, ist das Gericht am Sitz unseres Betreibers zuständig.</p>
+<h2>10. Sonstiges</h2>
+<p>Sollte eine einzelne Klausel unwirksam werden, bleiben die übrigen Klauseln voll wirksam.</p>
+<h2>11. Kontakt</h2>
+<p>Bei Fragen schreiben Sie eine E‑Mail an: <a href="mailto:${EMAIL}">${EMAIL}</a>.</p>
+`
+};
+I18N["fr-FR"] = {
+  langName:"Français",
+  title:"Conditions d'utilisation",
+  effectiveDate:"Date d’entrée en vigueur : 23 septembre 2026",
+  linkPrivacy:"Confidentialité",
+  linkTerms:"Conditions d'utilisation",
+  linkSubscription:"Contrat d’abonnement",
+  html:`
+<p>Ces Conditions d'utilisation constituent un contrat juridique entre vous (utilisateur particulier ou entité) et l'exploitant de ce logiciel utilitaire.</p>
+<p>Cette application est un outil autonome fonctionnant en local, sans connexion serveur obligatoire, sans publication de contenu utilisateur, sans communauté sociale et sans contenu UGC. En téléchargeant, installant et utilisant le logiciel, vous acceptez l'intégralité des présentes conditions. Si vous refusez, désinstallez‑le immédiatement.</p>
+<h2>1. Nature du logiciel et licence</h2>
+<ol>
+<li>Les fonctions principales s’exécutent sur votre appareil et fonctionnent hors‑ligne. Seules les mises à jour et la validation de licence peuvent utiliser le réseau de façon optionnelle.</li>
+<li>Nous vous accordons une licence personnelle limitée, non exclusive, non transférable et non commerciale pour votre usage privé et d’apprentissage sur vos propres appareils.</li>
+<li>Il est interdit de faire de l’ingénierie inverse, décompiler, cracker, modifier le code, les algorithmes ou l’interface. La location, revente, redistribution ou licence commerciale sont prohibées.</li>
+<li>Tous les droits de propriété intellectuelle, droits d’auteur, marques, algorithmes et code source nous appartiennent. Aucun droit de propriété n’est transféré par ces conditions.</li>
+</ol>
+<h2>2. Stockage local des données</h2>
+<ol>
+<li>Les paramètres, journaux, fichiers générés et cache sont stockés uniquement sur votre appareil. Nous ne collectons ni n’envoyons vos données. Consultez notre <a href="${URL_PRIVACY}" target="_blank">Politique de confidentialité</a>.</li>
+<li>Toute perte de données suite à une désinstallation, changement d’appareil, réinstallation système, panne matérielle ou suppression manuelle du cache est de votre responsabilité. Nous ne disposons pas de sauvegardes et ne pouvons pas restaurer vos fichiers.</li>
+<li>Les fonctions de sauvegarde cloud manuelles sont des outils d’auto‑service. Nous ne garantissons pas une conservation complète et permanente des données. Vous devez réaliser vos propres sauvegardes locales.</li>
+<li>Il est interdit de modifier bases de données, fichiers de configuration ou cache pour contourner les licences, ceci peut entraîner la révocation de votre licence.</li>
+</ol>
+<h2>3. Règles d’usage</h2>
+<ol>
+<li>Utilisez le logiciel conformément aux lois, règles de cybersécurité et à la morale publique.</li>
+<li>Ne traitez, ne générez ni ne diffusez pas de contenus illégaux, contrefaisants, obscènes ou dangereux.</li>
+<li>N’abusez pas de l’outil pour des traitements massifs, des travaux contrefaisants ou un gain commercial illicite.</li>
+<li>Ne contournez ni ne modifiez pas les mécanismes de permissions et de licences.</li>
+<li>Ne copiez, ne décomposez ni ne redistribuez pas de versions modifiées sous notre nom.</li>
+</ol>
+<p>Vous assumez l’ensemble des conséquences d’un usage abusif. Nous nous réservons le droit de bloquer l’accès et d’engager des poursuites légales.</p>
+<h2>4. Mises à jour et maintenance</h2>
+<ol>
+<li>Nous pouvons publier des mises à jour pour corriger des défauts, améliorer la sécurité et respecter la réglementation. L’installation est facultative.</li>
+<li>Nous n’avons aucune obligation de mises à jour perpétuelles. Le développement peut être arrêté pour des raisons opérationnelles. Les versions déjà installées restent utilisables.</li>
+<li>Les mises à jour servent à corriger des bugs et améliorer la compatibilité système ; elles ne collectent pas de données privées.</li>
+</ol>
+<h2>5. Fonctions payantes et abonnements</h2>
+<ol>
+<li>Les fonctions de base sont gratuites. Certaines fonctions premium sont débloquées par achat unique ou abonnement sous forme de droits virtuels locaux. Voir <a href="${URL_SUBSCRIPTION}" target="_blank">Contrat d’abonnement</a>.</li>
+<li>Une fois activées, les prestations sont considérées comme fournies ; aucun remboursement sans motif ne sera accordé.</li>
+<li>Aucune indemnité ni remboursement en cas de dysfonctionnement causé par une manipulation, un abus, un changement d’appareil ou des fichiers de licence corrompus.</li>
+</ol>
+<h2>6. Exonération de garantie</h2>
+<ol>
+<li>Le logiciel est fourni « tel quel ». Nous nous efforçons d’assurer sa stabilité, mais nous ne garantissons un fonctionnement sans défaut sur tous les appareils et systèmes d’exploitation.</li>
+<li>Il vous appartient de vérifier et de conserver les fichiers générés ou traités. Nous ne garantissons pas l’exactitude ni l’intégralité des résultats produits.</li>
+<li>Les pertes dues à des erreurs de manipulation, des anomalies matérielles, des problèmes de compatibilité ou l’absence de sauvegardes sont à votre charge.</li>
+<li>Nous déclinons toute responsabilité contractuelle si certaines fonctions sont restreintes pour cas de force majeure ou modification réglementaire.</li>
+</ol>
+<h2>7. Mineurs</h2>
+<p>Cet outil générique ne contient pas de contenu nuisible. Les mineurs ne peuvent l’utiliser qu’avec l’accord et la surveillance d’un tuteur légal, qui est responsable de leur usage et de leurs achats intégrés.</p>
+<h2>8. Révision des conditions</h2>
+<p>Nous pouvons adapter ces conditions aux lois et contraintes opérationnelles. La nouvelle version prend effet à sa publication. Continuer à utiliser l’application vaut acceptation.</p>
+<h2>9. Droit applicable et règlement des litiges</h2>
+<p>Le droit applicable est celui de la République populaire de Chine. Les litiges font l’objet d’une négociation préalable ; à défaut, le tribunal du siège de notre exploitant est compétent.</p>
+<h2>10. Divers</h2>
+<p>Si une clause est jugée invalide, les autres clauses conservent leur pleine efficacité.</p>
+<h2>11. Nous contacter</h2>
+<p>Pour toute question, écrivez‑nous à : <a href="mailto:${EMAIL}">${EMAIL}</a>.</p>
+`
+};
+
+const LANGS = ["zh-CN","zh-TW","en","ja","ko","de-DE","fr-FR"];
+let currentLang = "zh-CN";
+const selectEl = document.getElementById("langSelect");
+const contentBody = document.getElementById("contentBody");
+
+LANGS.forEach(l=>{
+  const opt = document.createElement("option");
+  opt.value = l;
+  opt.textContent = I18N[l].langName;
+  selectEl.appendChild(opt);
+});
+
+selectEl.onchange = ()=>{
+  setLang(selectEl.value);
+};
+
+function setLang(langKey){
+  currentLang = langKey;
+  const t = I18N[langKey] ?? I18N["en"];
+  document.title = t.title + " | LumoConvert";
+  document.documentElement.lang = langKey;
+  selectEl.value = langKey;
+
+  document.querySelector("[data-i18n='title']").textContent = t.title;
+  document.querySelector("[data-i18n='effectiveDate']").textContent = t.effectiveDate;
+  document.querySelector("[data-i18n='linkPrivacy']").textContent = t.linkPrivacy;
+  document.querySelector("[data-i18n='linkTerms']").textContent = t.linkTerms;
+  document.querySelector("[data-i18n='linkSubscription']").textContent = t.linkSubscription;
+
+  contentBody.innerHTML = t.html;
+  localStorage.setItem("terms_lang", langKey);
+}
+
+function detectLang(){
+  const nav = (navigator.language || "en").toLowerCase();
+  if(nav.startsWith("zh")){
+    if(nav.includes("tw") || nav.includes("hk")) return "zh-TW";
+    return "zh-CN";
+  }
+  for(const l of LANGS){
+    if(nav.startsWith(l.toLowerCase())) return l;
+  }
+  return "en";
+}
+
+(function init(){
+  const saved = localStorage.getItem("terms_lang");
+  const initLang = (saved && I18N[saved]) ? saved : detectLang();
+  setLang(initLang);
+})();
+</script>
+</body>
+</html>
