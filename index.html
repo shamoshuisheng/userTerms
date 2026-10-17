@@ -1,1 +1,301 @@
 
+<!DOCTYPE html>
+<html lang="zh‑Hans">
+<head>
+  <meta charset="UTF‑8" />
+  <meta name="viewport" content="width=device‑width, initial‑scale=1.0"/>
+  <title>Terms of Service | LumoConvert</title>
+  <style>
+    :root{
+      --bg-main:#0b0c14;
+      --bg-card:#141622;
+      --text-primary:#f0f2f8;
+      --text-secondary:#b8bcd0;
+      --accent:#4285ff;
+      --accent‑neon:#7b61ff;
+      --border:#272a3d;
+    }
+    *{box‑sizing:border‑box;margin:0;padding:0;}
+    body{
+      font‑family:‑apple‑system,BlinkMacSystemFont,"PingFang SC","Segoe UI",Roboto,Helvetica,Arial,sans‑serif;
+      background‑color:var(--bg‑main);
+      color:var(--text‑primary);
+      line‑height:1.8;
+      padding:24px 16px;
+      max‑width:860px;
+      margin:0 auto;
+    }
+    .lang‑wrap{
+      display:flex;
+      justify‑content:flex‑end;
+      margin‑bottom:28px;
+    }
+    .lang‑select{
+      background:var(--bg‑card);
+      border:1px solid var(--border);
+      color:var(--text‑primary);
+      padding:6px 10px;
+      border‑radius:6px;
+      font‑size:14px;
+      min‑width:160px;
+    }
+    .container{
+      background:var(--bg‑card);
+      border‑radius:14px;
+      padding:28px 32px;
+      border:1px solid var(--border);
+    }
+    h1{
+      font‑size:26px;
+      margin‑bottom:12px;
+      background:linear‑gradient(90deg,var(--accent),var(--accent‑neon));
+      ‑webkit‑background‑clip:text;
+      color:transparent;
+    }
+    .effective‑date{
+      color:var(--text‑secondary);
+      font‑size:14px;
+      margin‑bottom:24px;
+      padding‑bottom:14px;
+      border‑bottom:1px solid var(--border);
+    }
+    h2{
+      font‑size:18px;
+      margin:28px 0 10px;
+      color:#e2e6f5;
+    }
+    p{
+      color:var(--text‑secondary);
+      margin:10px 0;
+      text‑align:justify;
+    }
+    ul,ol{
+      padding‑left:22px;
+      margin:10px 0;
+      color:var(--text‑secondary);
+    }
+    li{
+      margin:6px 0;
+    }
+    strong{
+      color:#fff;
+    }
+    a{
+      color:var(--accent);
+      text‑decoration:none;
+    }
+    a:hover{text‑decoration:underline;}
+    footer{
+      margin‑top:36px;
+      padding‑top:16px;
+      border‑top:1px solid var(--border);
+      color:var(--text‑secondary);
+      font‑size:13px;
+      text‑align:center;
+    }
+    @media(max‑width:600px){
+      .container{padding:20px 16px;}
+      h1{font‑size:22px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="lang‑wrap">
+    <select class="lang‑select" id="langSelect"></select>
+  </div>
+  <div class="container" id="pageContent"></div>
+  <footer>LumoConvert © 2026</footer>
+
+<script>
+const i18n = {
+"zh‑Hans":{
+  title:"用户使用条款",
+  effective:"生效日期：2026年09月23日",
+  content:`
+<p>本《用户使用条款》（以下简称“本条款”）是您（个人或单位用户，以下简称“用户”）与本工具软件运营方（以下简称“我方”），就本工具类软件（以下简称“本软件”）的使用所订立的合法有效协议。</p>
+<p>本软件为纯本地单体工具应用，无服务器强制联网、无用户内容发布、无社区社交、无UGC内容。您下载、安装、运行、使用本软件，即表示您已阅读、理解并完全同意本条款全部内容。如您不同意本条款，请立即卸载并停止使用本软件。</p>
+<h2>一、软件性质与使用许可</h2>
+<ol>
+<li>本软件为单机本地工具类应用，核心功能均在用户本地设备运行，无需联网即可使用，仅部分升级、授权校验功能可选择联网。</li>
+<li>我方授予用户有限、非独占、不可转让、不可商用的个人使用许可：用户可在个人自有设备上安装并使用本软件，仅限个人学习、日常自用。</li>
+<li>用户不得对本软件进行逆向、反编译、反汇编、破解、篡改程序代码、算法、界面、资源文件；不得制作外挂、修改器、衍生版本；不得出租、售卖、分发、二次打包、商用授权。</li>
+<li>本软件所有知识产权、著作权、商标、算法、程序代码、功能设计均归我方所有，本条款不转让任何所有权。</li>
+</ol>
+<h2>二、本地数据与存储规则</h2>
+<ol>
+<li>本软件所有用户配置、本地记录、生成文件、缓存数据均仅存储于用户本地设备，我方不会主动收集、上传、备份用户本地工具数据。</li>
+<li>因用户卸载软件、更换设备、系统重装、设备故障、手动清理数据导致的配置丢失、文件丢失、记录清空，我方无备份、无法恢复，不承担任何责任。</li>
+<li>若软件附带手动云备份/导出功能，该功能仅为用户自助工具，我方不保证数据永久保存与绝对完整，用户需自行做好本地文件备份。</li>
+<li>用户不得通过修改本地数据库、配置文件、缓存数据的方式篡改软件授权、使用时长、功能权限，一经发现我方有权终止使用许可。</li>
+</ol>
+<h2>三、用户使用规范</h2>
+<ol>
+<li>用户承诺合法合规使用本工具软件，不得利用本软件实施违反法律法规、网络安全规定及公序良俗的行为。</li>
+<li>不得利用本软件处理、生成、传播违法、侵权、低俗、有害信息。</li>
+<li>不得利用本软件从事批量处理、恶意工具滥用、侵权作业、非法牟利等商业违规行为。</li>
+<li>不得尝试破解、绕过软件权限、授权机制、篡改软件运行逻辑。</li>
+<li>不得对软件进行扒包、复刻、二次开发、冒充我方工具对外分发。</li>
+</ol>
+<p>用户违规使用造成的一切后果由用户自行承担，我方有权终止用户使用权限并保留追责权利。</p>
+<h2>四、软件更新与维护</h2>
+<ol>
+<li>我方可根据产品迭代、安全优化、合规要求发布软件更新版本，用户可自主选择是否更新。</li>
+<li>作为单体工具软件，我方无需保证永久更新、永久维护，可根据运营情况停止版本迭代，停止更新后用户仍可正常使用已安装版本。</li>
+<li>软件更新仅用于修复漏洞、优化功能、适配新系统，不强制收集用户隐私数据。</li>
+</ol>
+<h2>五、付费与会员权益</h2>
+<ol>
+<li>本软件免费功能供用户自由自用，部分高级功能、解锁权限为一次性付费或周期订阅的本地虚拟权益。</li>
+<li>工具类虚拟功能权益一经解锁、生效，属于已提供的数字服务，不支持无理由退款。</li>
+<li>因用户篡改软件、违规使用、设备更换、自行损坏授权文件导致的功能失效，不予补偿或退款。</li>
+</ol>
+<h2>六、免责声明</h2>
+<ol>
+<li>本软件按“现状可用”原则提供，我方尽力保证工具功能稳定，但不保证软件绝对无漏洞、无报错、适配所有设备与系统版本。</li>
+<li>用户使用本软件生成、处理、导出的所有文件、资料、结果，均由用户自行负责校验与留存，我方不对工具输出结果的准确性、完整性承担担保责任。</li>
+<li>因用户操作失误、设备环境异常、系统兼容问题、未备份数据造成的损失，由用户自行承担。</li>
+<li>因不可抗力、政策合规调整导致软件部分功能下线或暂停，我方无需承担违约责任。</li>
+</ol>
+<h2>七、未成年人使用</h2>
+<p>本软件为通用工具类软件，无不良内容。未成年人需在监护人监督、同意下使用，监护人对未成年人的使用行为及付费行为承担监护责任。</p>
+<h2>八、协议修改与生效</h2>
+<p>我方有权根据法律法规及产品运营需要优化本使用条款，修改后的条款将在软件内公示，公示后即刻生效，用户继续使用软件即视为同意更新后条款。</p>
+<h2>九、法律适用与争议解决</h2>
+<p>本条款适用中华人民共和国法律。双方发生争议优先协商解决，协商不成的，可向我方运营主体所在地人民法院提起诉讼。</p>
+<h2>十、附则</h2>
+<p>本条款为本软件完整使用规则，如部分条款被认定无效，不影响其余条款的效力。</p>
+`
+},
+"zh‑Hant":{
+  title:"使用者使用條款",
+  effective:"生效日期：2026年09月23日",
+  content:`
+<p>本《使用者使用條款》（簡稱本條款）為您（個人或單位使用者）與軟體營運方（我方）就本工具軟體之使用所訂立的合法協議。</p>
+<p>本軟體為純本機獨立工具，無強制聯網伺服器、無使用者內容發布、無社群社交、無UGC內容。下載、安裝、執行即代表您已閱讀並完全同意本條款。若不同意請立即解除安裝並停止使用。</p>
+<h2>一、軟體性質與使用授權</h2>
+<ol>
+<li>本軟體為單機本機工具，核心功能於裝置本機執行，大多數功能離線可用，僅升級與授權驗證可選擇聯網。</li>
+<li>我方授予有限、非獨占、不可轉讓、禁止商用之個人使用授權：僅限於個人自有裝置，供個人學習與日常使用。</li>
+<li>禁止逆向工程、反編譯、破解、竄改程式、演算法、介面與資源；禁止製作外掛、衍生版本；禁止出租、販售、散佈、二次封裝、商業授權。</li>
+<li>軟體之智慧財產權、著作權、商標、演算法、程式碼、功能設計皆歸我方所有，本條款不轉移所有權。</li>
+</ol>
+<h2>二、本機資料儲存規則</h2>
+<ol>
+<li>設定、操作紀錄、產生檔案、快取全部儲存於使用者裝置；我方不會主動收集、上傳或備份使用者資料。</li>
+<li>解除安裝、更換裝置、系統重裝、裝置故障、手動清除資料造成檔案遺失，我方沒有備份，無法復原，不承擔責任。</li>
+<li>若內建手動雲備份/匯出，僅為使用者自助工具，我方不保證永久儲存，使用者應自行備份本機檔案。</li>
+<li>禁止修改本機資料庫、設定檔、快取來竄改授權、使用時長與功能權限，違反者我方得終止使用授權。</li>
+</ol>
+<h2>三、使用者使用規範</h2>
+<ol>
+<li>應合法使用本軟體，不得從事違反法律、網路安全與公序良俗之行為。</li>
+<li>不得處理、產生、散佈違法、侵權、低俗、有害資訊。</li>
+<li>禁止濫用工具做大量處理、侵權作業、非法營利等商業違規行為。</li>
+<li>不得破解、繞過權限與授權機制，竄改軟體執行邏輯。</li>
+<li>不得拆包、複製、二次開發、冒充本軟體向外散佈。</li>
+</ol>
+<p>違規使用的一切後果由使用者自行承擔，我方有權終止使用權利並保留法律追訴權。</p>
+<h2>四、軟體更新與維護</h2>
+<ol>
+<li>我方得依產品迭代、安全、合規發布更新版本，使用者可自行選擇是否更新。</li>
+<li>我方不承擔永久更新維護之義務，得依營運狀態停止迭代；停止更新後舊版仍可正常執行。</li>
+<li>更新僅用於修復漏洞、最佳化功能、適配新系統，不會強制蒐集個人隱私。</li>
+</ol>
+<h2>五、付費與會員權益</h2>
+<ol>
+<li>基礎功能免費使用；部分進階功能為一次性付費或週期訂閱之本機虛擬權益。</li>
+<li>虛擬功能權益一旦解鎖生效即視為服務已提供，不支援無理由退款。</li>
+<li>因竄改軟體、違規使用、更換裝置、損毀授權檔案造成功能失效，不予補償或退款。</li>
+</ol>
+<h2>六、免責聲明</h2>
+<ol>
+<li>本軟體依現況提供。我方盡力維持穩定，但不保證完全無錯誤、相容所有裝置與系統版本。</li>
+<li>使用者自行負責校驗與保管本軟體產生、處理、匯出的檔案，我方不擔保輸出結果的正確性與完整性。</li>
+<li>操作失誤、裝置異常、相容問題、未備份造成損失，由使用者自行負責。</li>
+<li>因不可抗力或法規調整造成部分功能下線，我方不負違約責任。</li>
+</ol>
+<h2>七、未成年人使用</h2>
+<p>本軟體為通用工具，無不良內容。未成年人應於監護人同意與監督下使用；監護人需就其使用與付費行為負監護責任。</p>
+<h2>八、條款修訂</h2>
+<p>我方得依法律及營運需要修訂本條款，修訂後公佈即生效；繼續使用軟體視為接受新版條款。</p>
+<h2>九、法律適用與爭議處理</h2>
+<p>本條款適用中華人民共和國法律。爭議優先協商，協商不成得向我方營運主體所在地法院提起訴訟。</p>
+<h2>十、附則</h2>
+<p>若本條款部分條文被認定無效，不影響剩餘條文效力。</p>
+`
+},
+"en‑US":{
+  title:"Terms of Use",
+  effective:"Effective Date: September 23, 2026",
+  content:`
+<p>These Terms of Use (“Terms”) constitute a binding legal agreement between you (individual or organizational user) and the operator of this utility software (“us”).</p>
+<p>This is a local‑first standalone utility app. No mandatory server‑side networking, no user content publishing, no social community, no UGC content. By downloading, installing, launching or using the Software you confirm you have read and fully accept these Terms. If you do not agree, uninstall and stop using immediately.</p>
+<h2>1. Software Nature & License</h2>
+<ol>
+<li>This is an offline‑capable local utility. Core logic runs on‑device. Only updates and license‑validation features may optionally access network.</li>
+<li>We grant you a limited, non‑exclusive, non‑transferable, non‑commercial personal license: you may install and use the Software on your own personal devices for learning and everyday personal purposes only.</li>
+<li>You shall not reverse‑engineer, decompile, disassemble, crack or alter source code, algorithms, UI or assets. Do not create mods, cheats or derivative builds. Do not rent, sell, redistribute, repackage or grant commercial licenses.</li>
+<li>All intellectual property, copyrights, trademarks, algorithms, source code and design belong to us. Nothing in these Terms transfers ownership rights.</li>
+</ol>
+<h2>2. Local‑Only Data Storage</h2>
+<ol>
+<li>All settings, operation logs, generated files and caches remain stored locally on your device. We do not actively collect, upload or back‑up your local data.</li>
+<li>Data loss caused by uninstall, device replacement, OS reinstall, hardware failure or manual cache clearing is your responsibility. We hold no backups and cannot restore lost data.</li>
+<li>If manual cloud‑backup / export functions are provided, they are self‑service tools only. We do not guarantee permanent or complete data preservation. You are responsible for your own local backups.</li>
+<li>Do not modify local databases, config files or cache to tamper with licenses, usage limits or feature permissions. Violation may result in immediate license termination.</li>
+</ol>
+<h2>3. Acceptable Use</h2>
+<ol>
+<li>Use this software in compliance with applicable laws, cybersecurity rules and public morals.</li>
+<li>Do not process, generate or distribute illegal, infringing, obscene or harmful content.</li>
+<li>Do not abuse the tool for mass‑processing, infringing workflows or unlawful commercial gain.</li>
+<li>Do not crack, bypass permissions or tamper with application runtime logic.</li>
+<li>Do not extract, clone, re‑develop or redistribute modified versions pretending to be our official software.</li>
+</ol>
+<p>You bear full responsibility for consequences arising from misuse. We reserve the right to revoke access and pursue legal remedies.</p>
+<h2>4. Updates & Maintenance</h2>
+<ol>
+<li>We may release updates for feature improvements, security fixes or compliance. You may choose whether to install them.</li>
+<li>We are not obligated to maintain perpetual updates. Development may cease for operational reasons. Previously installed copies keep working normally.</li>
+<li>Updates serve bug‑fixing, optimization and OS compatibility; they do not forcibly collect private user data.</li>
+</ol>
+<h2>5. Paid‑Features & Membership</h2>
+<ol>
+<li>Basic functions are free for personal use. Certain premium features are unlocked via one‑time purchase or auto‑renew subscription as local‑only virtual entitlements.</li>
+<li>Once premium virtual entitlements are activated the service is deemed delivered. No unconditional refunds apply.</li>
+<li>No compensation or refund for feature failure caused by tampering, misuse, device change or corrupted local license files.</li>
+</ol>
+<h2>6. Disclaimer of Warranties</h2>
+<ol>
+<li>The software is provided “as‑is”. We strive for stability but do not guarantee bug‑free operation or full compatibility with every device / OS version.</li>
+<li>You are solely responsible for verifying and preserving all files, documents and outputs produced or processed by this software. We make no warranty for accuracy or completeness of output results.</li>
+<li>You are liable for losses caused by user error, abnormal device environment, compatibility issues or lack of personal backups.</li>
+<li>We are not liable for breach of contract if some features get disabled due to force‑majeure or regulatory policy adjustments.</li>
+</ol>
+<h2>7. Minors</h2>
+<p>This is a general‑purpose utility without harmful content. Minors must use it under guardian consent and supervision. Guardians are responsible for minor’s usage and any‑in‑app purchases.</p>
+<h2>8. Term Revisions</h2>
+<p>We may revise these Terms to comply with law or business needs. Revised terms take effect upon publication. Continued software use constitutes acceptance of updated text.</p>
+<h2>9. Governing Law & Disputes</h2>
+<p>These Terms are governed by laws of People’s Republic of China. Disputes shall first be resolved by negotiation. If negotiation fails, litigation may be filed at the people’s court where our operator entity is located.</p>
+<h2>10. Miscellaneous</h2>
+<p>If any clause of these Terms is held invalid, remaining clauses shall remain fully enforceable.</p>
+`
+},
+"ja":{
+  title:"利用規約",
+  effective:"発効日：2026年09月23日",
+  content:`
+<p>本利用規約は、ユーザー（個人または組織）と本ツールソフトウェア運営者の間で締結される法的な契約です。</p>
+<p>本アプリはローカル実行型のスタンドアロンユーティリティで、強制的なサーバー通信、ユーザーコンテンツ投稿、ソーシャル機能、UGCコンテンツはありません。ダウンロード・インストール・実行することで本規約に同意したものとみなされます。同意できない場合は直ちにアンインストールして利用を停止してください。</p>
+<h2>1.ソフトウェアの性質とライセンス</h2>
+<ol>
+<li>主要機能は端末内で動作し多くの機能はオフラインで利用可能。アップデートとライセンス検証のみオプションでネットワークを使用します。</li>
+<li>当社は限定的、非独占的、譲渡不可、商用禁止の個人利用ライセンスを付与します。自身の端末で個人学習・日常用途に限り利用できます。</li>
+<li>リバースエンジニアリング、逆コンパイル、クラック、コード・アルゴリズム・UIの改変を禁止します。改造版・派生版の作成、貸出、販売、再配布、商用ライセンス付与はできません。</li>
+<li>著作権、商標、アルゴリズム、ソースコード、デザインなどすべての知的財産権は当社に帰属し、本規約によって所有権は移転しません。</li>
+</ol>
+<h2>2.ローカルデータ保存ルール</h2>
+<ol>
+<li>設定、操作ログ、生成ファイル、キャッシュはすべてユーザー端末に保存されます。当社は能動的にデータを収集・アップロード・バックアップしません。</li>
+<li>アンインスト
